@@ -1,4 +1,4 @@
-# Project 1: Personalized Grocery Reorder and Recommendation System
+# Personalized Grocery Reorder and Recommendation System
 
 ## Question and delivered system
 
