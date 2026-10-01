@@ -207,6 +207,6 @@ About **40.4% of next-order products** in the established full-data test benchma
 
 The public dataset lacks exact calendar timestamps, prices, promotions, inventory, recommendation impressions, and live customer feedback. Days between orders are capped at 30, making elapsed-day features approximate. Offline purchase matching does not establish that recommendations cause purchases or increase sales.
 
-- [Project 1 final report](reports/PROJECT_1_FINAL.md): project requirements, model comparisons, feature importance, and saved customer examples.
+- [Project  final report](reports/PROJECT_1_FINAL.md): project requirements, model comparisons, feature importance, and saved customer examples.
 - [Implementation results](reports/IMPLEMENTATION_RESULTS.md): discovery, similarity, clustering, feature experiments, and combined display evaluation.
 - [Research and project alignment](reports/MODEL_RESEARCH_AND_PROJECT_ALIGNMENT.md): design rationale and research supporting the experiments.
