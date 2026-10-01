@@ -1,0 +1,76 @@
+{
+  "population": "selected top-five products on 1500 pilot test customers",
+  "displayed_products": 7447,
+  "score_bins": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "count": 200,
+      "mean_score": 0.075460395855,
+      "observed_rate": 0.085
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "count": 1214,
+      "mean_score": 0.15351464975370674,
+      "observed_rate": 0.13097199341021418
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.3,
+      "count": 1394,
+      "mean_score": 0.24880468659971303,
+      "observed_rate": 0.24748923959827834
+    },
+    {
+      "lower": 0.3,
+      "upper": 0.4,
+      "count": 1282,
+      "mean_score": 0.34940730092043687,
+      "observed_rate": 0.33541341653666146
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "count": 1104,
+      "mean_score": 0.4488628958423913,
+      "observed_rate": 0.42844202898550726
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "count": 926,
+      "mean_score": 0.5460927532397408,
+      "observed_rate": 0.5269978401727862
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "count": 672,
+      "mean_score": 0.6488020829464286,
+      "observed_rate": 0.6071428571428571
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "count": 469,
+      "mean_score": 0.7457513572707889,
+      "observed_rate": 0.7121535181236673
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "count": 175,
+      "mean_score": 0.8365731888,
+      "observed_rate": 0.8228571428571428
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "count": 11,
+      "mean_score": 0.9186436954545454,
+      "observed_rate": 1.0
+    }
+  ]
+}

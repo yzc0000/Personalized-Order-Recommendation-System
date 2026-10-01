@@ -1,0 +1,49 @@
+{
+  "purpose": "Read-only metric and retrieval audit; no model selection or fitting",
+  "source_script": "experiments/research_audit.py",
+  "script_sha256": "bde4182f31192bd86d9db99c9e012728b31244a65d691940fc08461fbe5937c9",
+  "full_model_recomputation": {
+    "users": 19682,
+    "top5_hits_from_raw_targets": 38144,
+    "precision_at_5": 0.38760288588558073,
+    "saved_labels_agree_with_raw_target_membership": true
+  },
+  "preorder_validation_retrieval": {
+    "users": 3000,
+    "retriever_training_users": 14000,
+    "population": "3,000 validation users from the existing 20k original-training-user pilot",
+    "catalog_products": 49688,
+    "indexed_products": 3000,
+    "indexed_catalog_fraction": 0.06037675092577685,
+    "target_items": 31354,
+    "repeat_target_items": 18525,
+    "novel_target_items": 12829,
+    "novel_target_items_in_index": 8191,
+    "indexed_fraction_of_novel_targets": 0.6384753293319823,
+    "novel_candidates": 115360,
+    "novel_candidate_hits": 1372,
+    "novel_retrieval_recall_at_40": 0.10694520227609322,
+    "recall_of_indexed_novel_targets": 0.1675009156391161,
+    "novel_candidate_positive_rate": 0.011893203883495145,
+    "repeat_candidate_recall": 0.5908337054283345,
+    "mixed_candidate_recall": 0.6345920775658608,
+    "repeat_oracle_precision_at_5": 0.6991333333333334,
+    "mixed_oracle_precision_at_5": 0.7319333333333333,
+    "all_catalog_oracle_precision_at_5": 0.8854,
+    "users_without_indexed_anchor": 116,
+    "popular_unseen_same_history_baseline": {
+      "statistics_source": "same 14k training-user prior histories as co-basket index",
+      "candidates": 120000,
+      "hits_at_40": 1216,
+      "novel_recall_at_40": 0.09478525216306805,
+      "precision_at_5": 0.0194
+    },
+    "popular_unseen_all_prior_baseline": {
+      "statistics_source": "all prior histories; different fitting population from co-basket index",
+      "candidates": 120000,
+      "hits_at_40": 1221,
+      "novel_recall_at_40": 0.09517499415387014,
+      "precision_at_5": 0.019266666666666668
+    }
+  }
+}

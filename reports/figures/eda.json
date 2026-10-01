@@ -1,0 +1,33 @@
+{
+  "population": "all 131,209 labeled next orders and all 3,214,874 prior orders",
+  "historical_orders_per_labeled_user": {
+    "count": 131209,
+    "mean": 15.603937229915632,
+    "median": 9.0,
+    "p90": 37.0,
+    "p99": 87.0
+  },
+  "prior_items_per_order": {
+    "count": 3214874,
+    "mean": 10.088883421247614,
+    "median": 8.0,
+    "p90": 20.0,
+    "p99": 35.0
+  },
+  "target_items_per_order": {
+    "count": 131209,
+    "mean": 10.552759338155157,
+    "median": 9.0,
+    "p90": 21.0,
+    "p99": 37.0
+  },
+  "target_orders_with_fewer_than_five_items": 0.23217919502473153,
+  "target_novel_item_share": 0.4014055872490371,
+  "product_concentration": {
+    "top_1_percent_products_share": 0.4279909574033986,
+    "top_5_percent_products_share": 0.6984503131835991,
+    "top_10_percent_products_share": 0.8143386812722716
+  },
+  "first_order_missing_gap_rate": 1.0,
+  "days_since_prior_order_capped_at_30_share_of_nonfirst": 0.10175177362717351
+}

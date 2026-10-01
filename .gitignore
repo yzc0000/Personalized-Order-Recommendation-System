@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.deps/
+.pytest_cache/
+artifacts/
+orders.csv
+order_products__prior.csv
+order_products__train.csv
+products.csv
+aisles.csv
+departments.csv
+~$*.docx
+1.docx

@@ -1,0 +1,30 @@
+{
+  "user_id": 3,
+  "prediction_time": "before next order starts",
+  "model": "all-labeled deployment fit; held-out metrics belong to evaluated_model.joblib",
+  "score_meaning": "estimated probability of reordering this product in the next basket",
+  "minimum_probability": 0.5,
+  "completed_orders": 12,
+  "previously_purchased_product_candidates": 33,
+  "display_limit": 5,
+  "recommendations": [
+    {
+      "rank": 1,
+      "product_id": 39190,
+      "product_name": "Vanilla Unsweetened Almond Milk",
+      "estimated_probability": 0.740781843662262
+    },
+    {
+      "rank": 2,
+      "product_id": 47766,
+      "product_name": "Organic Avocado",
+      "estimated_probability": 0.6819583773612976
+    },
+    {
+      "rank": 3,
+      "product_id": 21903,
+      "product_name": "Organic Baby Spinach",
+      "estimated_probability": 0.5587552189826965
+    }
+  ]
+}

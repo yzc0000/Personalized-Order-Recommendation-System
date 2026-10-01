@@ -1,0 +1,674 @@
+{
+  "population": "120 sampled users from the 10k standard benchmark test split",
+  "explained_candidate_rows": 3000,
+  "output_scale": "log odds (XGBoost raw margin); expit gives probability",
+  "additivity_verified": true,
+  "feature_importance": [
+    {
+      "feature": "up_days_since_last_purchase",
+      "mean_absolute_log_odds_contribution": 0.338053435087204
+    },
+    {
+      "feature": "up_recent5_count",
+      "mean_absolute_log_odds_contribution": 0.23652881383895874
+    },
+    {
+      "feature": "up_order_gap",
+      "mean_absolute_log_odds_contribution": 0.23380348086357117
+    },
+    {
+      "feature": "up_order_rate_since_first",
+      "mean_absolute_log_odds_contribution": 0.20887601375579834
+    },
+    {
+      "feature": "product_reorder_rate",
+      "mean_absolute_log_odds_contribution": 0.20009808242321014
+    },
+    {
+      "feature": "user_unique_products",
+      "mean_absolute_log_odds_contribution": 0.1820659637451172
+    },
+    {
+      "feature": "up_purchase_share",
+      "mean_absolute_log_odds_contribution": 0.14082591235637665
+    },
+    {
+      "feature": "user_item_count",
+      "mean_absolute_log_odds_contribution": 0.1303461194038391
+    },
+    {
+      "feature": "up_mean_days_interval",
+      "mean_absolute_log_odds_contribution": 0.10596771538257599
+    },
+    {
+      "feature": "user_average_basket_size",
+      "mean_absolute_log_odds_contribution": 0.10371420532464981
+    },
+    {
+      "feature": "product_purchase_count",
+      "mean_absolute_log_odds_contribution": 0.08898141235113144
+    },
+    {
+      "feature": "user_mean_days_between_orders",
+      "mean_absolute_log_odds_contribution": 0.07120692729949951
+    },
+    {
+      "feature": "up_next_order_gap_ratio",
+      "mean_absolute_log_odds_contribution": 0.06847651302814484
+    },
+    {
+      "feature": "up_purchase_count",
+      "mean_absolute_log_odds_contribution": 0.05665124952793121
+    },
+    {
+      "feature": "up_mean_cart_position",
+      "mean_absolute_log_odds_contribution": 0.05383991450071335
+    },
+    {
+      "feature": "up_recent3_count",
+      "mean_absolute_log_odds_contribution": 0.04759660363197327
+    },
+    {
+      "feature": "user_aisle_share",
+      "mean_absolute_log_odds_contribution": 0.031082209199666977
+    },
+    {
+      "feature": "up_last_order_fraction",
+      "mean_absolute_log_odds_contribution": 0.03102727048099041
+    },
+    {
+      "feature": "user_department_share",
+      "mean_absolute_log_odds_contribution": 0.029528668150305748
+    },
+    {
+      "feature": "user_order_count",
+      "mean_absolute_log_odds_contribution": 0.0270107202231884
+    },
+    {
+      "feature": "up_mean_order_interval",
+      "mean_absolute_log_odds_contribution": 0.023217927664518356
+    },
+    {
+      "feature": "up_reorder_count",
+      "mean_absolute_log_odds_contribution": 0.016247879713773727
+    }
+  ],
+  "example_top_five": [
+    {
+      "user_id": 33563,
+      "product_id": 26047,
+      "product_name": "Tuna Salad",
+      "rank": 1,
+      "estimated_probability": 0.5696673393249512,
+      "appeared_in_next_basket": false,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.797336995601654
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.3103349804878235
+        },
+        {
+          "feature": "user_average_basket_size",
+          "value": -0.24469280242919922
+        }
+      ]
+    },
+    {
+      "user_id": 33563,
+      "product_id": 22035,
+      "product_name": "Organic Whole String Cheese",
+      "rank": 2,
+      "estimated_probability": 0.3948546051979065,
+      "appeared_in_next_basket": false,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.5026064515113831
+        },
+        {
+          "feature": "product_reorder_rate",
+          "value": 0.3702675700187683
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.35478276014328003
+        }
+      ]
+    },
+    {
+      "user_id": 33563,
+      "product_id": 5077,
+      "product_name": "100% Whole Wheat Bread",
+      "rank": 3,
+      "estimated_probability": 0.21036210656166077,
+      "appeared_in_next_basket": true,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_order_rate_since_first",
+          "value": 0.2486933469772339
+        },
+        {
+          "feature": "product_reorder_rate",
+          "value": 0.2117304503917694
+        },
+        {
+          "feature": "user_average_basket_size",
+          "value": -0.19353534281253815
+        }
+      ]
+    },
+    {
+      "user_id": 33563,
+      "product_id": 43713,
+      "product_name": "Organic Creamy Peanut Butter",
+      "rank": 4,
+      "estimated_probability": 0.2023460417985916,
+      "appeared_in_next_basket": false,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_order_rate_since_first",
+          "value": 0.21799680590629578
+        },
+        {
+          "feature": "user_average_basket_size",
+          "value": -0.21249935030937195
+        },
+        {
+          "feature": "up_purchase_share",
+          "value": 0.19033338129520416
+        }
+      ]
+    },
+    {
+      "user_id": 33563,
+      "product_id": 37332,
+      "product_name": "Almond Breeze Unsweetened Vanilla Almond Milk",
+      "rank": 5,
+      "estimated_probability": 0.15834444761276245,
+      "appeared_in_next_basket": false,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "user_average_basket_size",
+          "value": -0.2602727711200714
+        },
+        {
+          "feature": "user_unique_products",
+          "value": 0.2464994192123413
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.19935756921768188
+        }
+      ]
+    },
+    {
+      "user_id": 86498,
+      "product_id": 20842,
+      "product_name": "Total 0% Greek Yogurt",
+      "rank": 1,
+      "estimated_probability": 0.5094677805900574,
+      "appeared_in_next_basket": false,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 1.0965951681137085
+        },
+        {
+          "feature": "user_item_count",
+          "value": -0.370670348405838
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.25733253359794617
+        }
+      ]
+    },
+    {
+      "user_id": 86498,
+      "product_id": 9387,
+      "product_name": "Granny Smith Apples",
+      "rank": 2,
+      "estimated_probability": 0.42991137504577637,
+      "appeared_in_next_basket": false,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.8233628869056702
+        },
+        {
+          "feature": "user_item_count",
+          "value": -0.3301181495189667
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.2618231475353241
+        }
+      ]
+    },
+    {
+      "user_id": 86498,
+      "product_id": 4605,
+      "product_name": "Yellow Onions",
+      "rank": 3,
+      "estimated_probability": 0.37263378500938416,
+      "appeared_in_next_basket": true,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.725227415561676
+        },
+        {
+          "feature": "user_item_count",
+          "value": -0.2775842845439911
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.239968940615654
+        }
+      ]
+    },
+    {
+      "user_id": 86498,
+      "product_id": 1559,
+      "product_name": "Cherry Pomegranate Greek Yogurt",
+      "rank": 4,
+      "estimated_probability": 0.3649466335773468,
+      "appeared_in_next_basket": true,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.4194868206977844
+        },
+        {
+          "feature": "product_reorder_rate",
+          "value": 0.3573569655418396
+        },
+        {
+          "feature": "user_item_count",
+          "value": -0.3493543565273285
+        }
+      ]
+    },
+    {
+      "user_id": 86498,
+      "product_id": 28204,
+      "product_name": "Organic Fuji Apple",
+      "rank": 5,
+      "estimated_probability": 0.33222639560699463,
+      "appeared_in_next_basket": true,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.378259539604187
+        },
+        {
+          "feature": "user_item_count",
+          "value": -0.31624963879585266
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.2952262759208679
+        }
+      ]
+    },
+    {
+      "user_id": 104522,
+      "product_id": 38944,
+      "product_name": "Seven Grain Crispy Tenders",
+      "rank": 1,
+      "estimated_probability": 0.6632199883460999,
+      "appeared_in_next_basket": true,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 1.3220192193984985
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.3048487603664398
+        },
+        {
+          "feature": "up_purchase_share",
+          "value": 0.3020719289779663
+        }
+      ]
+    },
+    {
+      "user_id": 104522,
+      "product_id": 22124,
+      "product_name": "Total 0% Raspberry Yogurt",
+      "rank": 2,
+      "estimated_probability": 0.3575040400028229,
+      "appeared_in_next_basket": false,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.6764521598815918
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.2781810760498047
+        },
+        {
+          "feature": "up_purchase_share",
+          "value": 0.23350560665130615
+        }
+      ]
+    },
+    {
+      "user_id": 104522,
+      "product_id": 43961,
+      "product_name": "Organic Peeled Whole Baby Carrots",
+      "rank": 3,
+      "estimated_probability": 0.283674418926239,
+      "appeared_in_next_basket": false,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.6289682984352112
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.22454611957073212
+        },
+        {
+          "feature": "up_order_gap",
+          "value": 0.17462214827537537
+        }
+      ]
+    },
+    {
+      "user_id": 104522,
+      "product_id": 36818,
+      "product_name": "ORGANIC Cocoa Mint Protein Single",
+      "rank": 4,
+      "estimated_probability": 0.28069648146629333,
+      "appeared_in_next_basket": false,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.38929450511932373
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.3461266756057739
+        },
+        {
+          "feature": "up_order_rate_since_first",
+          "value": 0.2308942973613739
+        }
+      ]
+    },
+    {
+      "user_id": 104522,
+      "product_id": 13870,
+      "product_name": "Lightly Salted Baked Snap Pea Crisps",
+      "rank": 5,
+      "estimated_probability": 0.26099926233291626,
+      "appeared_in_next_basket": false,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.35480841994285583
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.2945299744606018
+        },
+        {
+          "feature": "up_order_rate_since_first",
+          "value": 0.21454152464866638
+        }
+      ]
+    },
+    {
+      "user_id": 108321,
+      "product_id": 47977,
+      "product_name": "Grapefruit Sparkling Water",
+      "rank": 1,
+      "estimated_probability": 0.6673883199691772,
+      "appeared_in_next_basket": true,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 1.365213394165039
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.34099021553993225
+        },
+        {
+          "feature": "up_recent3_count",
+          "value": 0.26679015159606934
+        }
+      ]
+    },
+    {
+      "user_id": 108321,
+      "product_id": 13914,
+      "product_name": "Cheez-It Baked Snack Crackers",
+      "rank": 2,
+      "estimated_probability": 0.535725474357605,
+      "appeared_in_next_basket": true,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.8294772505760193
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.22303353250026703
+        },
+        {
+          "feature": "up_purchase_share",
+          "value": 0.22278405725955963
+        }
+      ]
+    },
+    {
+      "user_id": 108321,
+      "product_id": 36316,
+      "product_name": "Lemon Sparkling Water",
+      "rank": 3,
+      "estimated_probability": 0.500715970993042,
+      "appeared_in_next_basket": false,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.8880229592323303
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.3465248942375183
+        },
+        {
+          "feature": "up_recent3_count",
+          "value": 0.2692185938358307
+        }
+      ]
+    },
+    {
+      "user_id": 108321,
+      "product_id": 25408,
+      "product_name": "Peppered Beef Jerky",
+      "rank": 4,
+      "estimated_probability": 0.46252262592315674,
+      "appeared_in_next_basket": true,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.7610043287277222
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": 0.25719884037971497
+        },
+        {
+          "feature": "up_order_rate_since_first",
+          "value": 0.19858907163143158
+        }
+      ]
+    },
+    {
+      "user_id": 108321,
+      "product_id": 20985,
+      "product_name": "Trail Mix Fruit & Nut Chewy Granola Bars",
+      "rank": 5,
+      "estimated_probability": 0.2346692681312561,
+      "appeared_in_next_basket": true,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_order_rate_since_first",
+          "value": 0.23546907305717468
+        },
+        {
+          "feature": "up_purchase_share",
+          "value": 0.20477914810180664
+        },
+        {
+          "feature": "up_order_gap",
+          "value": 0.18955475091934204
+        }
+      ]
+    },
+    {
+      "user_id": 152357,
+      "product_id": 24852,
+      "product_name": "Banana",
+      "rank": 1,
+      "estimated_probability": 0.550097644329071,
+      "appeared_in_next_basket": true,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.7487148642539978
+        },
+        {
+          "feature": "product_reorder_rate",
+          "value": 0.490824431180954
+        },
+        {
+          "feature": "user_item_count",
+          "value": -0.36668768525123596
+        }
+      ]
+    },
+    {
+      "user_id": 152357,
+      "product_id": 39425,
+      "product_name": "Crystallized Ginger",
+      "rank": 2,
+      "estimated_probability": 0.3266577124595642,
+      "appeared_in_next_basket": false,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 1.05536949634552
+        },
+        {
+          "feature": "user_unique_products",
+          "value": 0.40939074754714966
+        },
+        {
+          "feature": "user_item_count",
+          "value": -0.37333714962005615
+        }
+      ]
+    },
+    {
+      "user_id": 152357,
+      "product_id": 28553,
+      "product_name": "Whole Strawberries",
+      "rank": 3,
+      "estimated_probability": 0.273656964302063,
+      "appeared_in_next_basket": false,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "user_unique_products",
+          "value": 0.46996238827705383
+        },
+        {
+          "feature": "user_item_count",
+          "value": -0.3965567350387573
+        },
+        {
+          "feature": "up_recent5_count",
+          "value": 0.37209275364875793
+        }
+      ]
+    },
+    {
+      "user_id": 152357,
+      "product_id": 47766,
+      "product_name": "Organic Avocado",
+      "rank": 4,
+      "estimated_probability": 0.2353137880563736,
+      "appeared_in_next_basket": true,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "user_unique_products",
+          "value": 0.4786333739757538
+        },
+        {
+          "feature": "user_item_count",
+          "value": -0.4082300364971161
+        },
+        {
+          "feature": "product_reorder_rate",
+          "value": 0.3930167257785797
+        }
+      ]
+    },
+    {
+      "user_id": 152357,
+      "product_id": 28928,
+      "product_name": "Uncured Black Forest Ham",
+      "rank": 5,
+      "estimated_probability": 0.23005051910877228,
+      "appeared_in_next_basket": true,
+      "baseline_log_odds": -2.253075122833252,
+      "strongest_log_odds_contributions": [
+        {
+          "feature": "up_recent5_count",
+          "value": 0.7097954154014587
+        },
+        {
+          "feature": "up_days_since_last_purchase",
+          "value": -0.439090371131897
+        },
+        {
+          "feature": "user_unique_products",
+          "value": 0.374625563621521
+        }
+      ]
+    }
+  ],
+  "interpretation": "Attributions explain fitted predictions, not causes of purchases."
+}
