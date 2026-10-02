@@ -1,6 +1,6 @@
 # Grocery recommendation implementation and results
 
-Run date: 1 October 2026. This is an offline next-basket study using the six supplied Instacart tables. Its primary task is a probability for each previously bought customer-product pair, followed by a ranked Top-K list. New-to-customer discovery is the additional objective requested during the project.
+This is an offline next-basket study using the six supplied Instacart tables. Its primary task is a probability for each previously bought customer-product pair, followed by a ranked Top-K list. New-to-customer discovery is the additional objective requested during the project.
 
 ## Current decision
 
